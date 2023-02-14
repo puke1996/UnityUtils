@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Plugins.Puke.Finger
+namespace Finger
 {
     public interface IFinger
     {

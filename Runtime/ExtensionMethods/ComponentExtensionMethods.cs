@@ -1,8 +1,7 @@
 using System;
-using Plugins.Puke.UnityUtilities.UnityUtils;
 using UnityEngine;
 
-namespace Plugins.Puke.UnityUtilities.UnityExtensionMethods
+namespace ExtensionMethods
 {
     public static class ComponentExtensionMethods
     {

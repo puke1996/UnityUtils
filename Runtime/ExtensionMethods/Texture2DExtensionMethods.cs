@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace Plugins.Puke.UnityUtilities.UnityExtensionMethods
+namespace ExtensionMethods
 {
     public static class Texture2DExtensionMethods
     {

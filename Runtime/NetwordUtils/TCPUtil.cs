@@ -5,7 +5,7 @@ using System.Net.Sockets;
 using System.Text;
 using UnityEngine;
 
-namespace Plugins.Puke.UnityUtilities.UnityNetworkUtils
+namespace NetwordUtils
 {
     /// <summary>
     /// TCP/UDP协议

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Plugins.Puke.RichMono
+namespace RichMono
 {
     public abstract class LazyRichMonoSingleton<T> : RichMono where T : LazyRichMonoSingleton<T>
     {

@@ -1,6 +1,6 @@
 ﻿using UnityEngine.EventSystems;
 
-namespace Plugins.Puke.Mouse
+namespace Mouse
 {
     /// <summary>
     /// 确保EventSystem的执行顺序

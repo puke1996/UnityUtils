@@ -1,4 +1,4 @@
-namespace Plugins.Puke.RichMono
+namespace RichMono
 {
     public interface IRichMono
     {

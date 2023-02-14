@@ -1,9 +1,10 @@
 ﻿using System.Collections;
 using System.Text;
+using Unity.Plastic.Newtonsoft.Json;
 using UnityEngine;
 using UnityEngine.Networking;
 
-namespace Plugins.Puke.UnityUtilities.UnityNetworkUtils
+namespace NetwordUtils
 {
     public delegate void StringHandler(string str);
 

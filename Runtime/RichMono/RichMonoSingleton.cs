@@ -1,6 +1,6 @@
 using System;
 
-namespace Plugins.Puke.RichMono
+namespace RichMono
 {
     public abstract class RichMonoSingleton<T> : RichMono where T : RichMonoSingleton<T>
     {

@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using Plugins.Puke.UnityUtilities.UnityUtils;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
-namespace Plugins.Puke.UnityUtilities.UnityExtensionMethods
+namespace ExtensionMethods
 {
     public static class CameraUtil
     {
@@ -567,7 +566,7 @@ namespace Plugins.Puke.UnityUtilities.UnityExtensionMethods
         /// </summary>
         public static float GetDistanceByFrustum(this Camera cam, float frustum)
         {
-            return (float) (frustum / System.Math.Tan(MathUtils.Deg2Rad(cam.fieldOfView * 0.5f)));
+            return (float) (frustum / Math.Tan(cam.fieldOfView * 0.5f * Mathf.Deg2Rad));
         }
 
         /// <summary>
@@ -575,7 +574,7 @@ namespace Plugins.Puke.UnityUtilities.UnityExtensionMethods
         /// </summary>
         public static float GetFrustumByDistance(this Camera cam, float distance)
         {
-            return (float) (distance * System.Math.Tan(MathUtils.Deg2Rad(cam.fieldOfView * 0.5f)));
+            return (float) (distance * Math.Tan(cam.fieldOfView * 0.5f * Mathf.Deg2Rad));
         }
     }
 }

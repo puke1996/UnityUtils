@@ -1,4 +1,4 @@
-﻿namespace Plugins.Puke.UnitySingleton
+﻿namespace Singleton
 {
     public class LazySingleton<T> where T : new()
     {

@@ -1,4 +1,4 @@
-﻿namespace Plugins.Puke.UnityUtilities.UnityNetworkUtils
+﻿namespace NetwordUtils
 {
     public delegate void CommonResultHandler<T>(CommonResult<T> commonResult);
 

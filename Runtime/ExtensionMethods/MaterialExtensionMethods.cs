@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Plugins.Puke.UnityUtilities.UnityExtensionMethods
+namespace ExtensionMethods
 {
     /// <summary>
     /// To take effect in the build, add shader variants

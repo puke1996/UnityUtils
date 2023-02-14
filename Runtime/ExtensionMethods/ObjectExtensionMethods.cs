@@ -1,4 +1,4 @@
-namespace Plugins.Puke.UnityUtilities.UnityExtensionMethods
+namespace ExtensionMethods
 {
     public static class ObjectExtensionMethods
     {

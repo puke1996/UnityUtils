@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Plugins.Puke.UnitySingleton
+namespace Singleton
 {
     public abstract class LazyMonoSingleton<T> : MonoBehaviour where T : LazyMonoSingleton<T>
     {

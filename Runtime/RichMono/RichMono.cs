@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace Plugins.Puke.RichMono
+namespace RichMono
 {
     public abstract class RichMono : MonoBehaviour, IRichMono
     {

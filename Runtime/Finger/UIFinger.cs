@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine.EventSystems;
 
-namespace Plugins.Puke.Finger
+namespace Finger
 {
     public sealed class UIFinger : RichMono.RichMono, IPointerDownHandler
     {

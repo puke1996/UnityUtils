@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-namespace Plugins.Puke.Finger
+namespace Finger
 {
     [DefaultExecutionOrder(Int32.MinValue)]
     public sealed class SingleUIFinger : MonoBehaviour, IPointerDownHandler

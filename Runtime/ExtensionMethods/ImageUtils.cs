@@ -3,7 +3,7 @@ using UnityEngine;
 
 // Flood Fill implementation for Unity3D C#
 // Used in: https://www.elfgamesworks.com/2016/12/14/identify-unwanted-maze-solutions-using-flood-fill-with-unity3d/
-namespace Plugins.Puke.UnityUtilities.UnityExtensionMethods
+namespace ExtensionMethods
 {
     public static class ImageUtils
     {

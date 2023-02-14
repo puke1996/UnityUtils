@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace Plugins.Puke.UnitySingleton
+namespace Singleton
 {
     public class MonoSingleton<T> : MonoBehaviour where T : MonoSingleton<T>
     {

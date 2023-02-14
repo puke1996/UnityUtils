@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Plugins.Puke.UnityUtilities.UnitySimpleUIComponents
+namespace UGUIComponents
 {
     public class ViewGroup : MonoBehaviour
     {

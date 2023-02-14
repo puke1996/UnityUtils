@@ -1,9 +1,8 @@
 ﻿using System.Collections.Generic;
-using Plugins.Puke.Engine.UnitySingleton;
-using Plugins.Puke.UnityUtilities.UnityFactory;
+using Singleton;
 using UnityEngine;
 
-namespace Plugins.Puke.RichMono
+namespace RichMono
 {
     [DefaultExecutionOrder(int.MinValue)]
     [RequireComponent(typeof(RichMonoSystemPartition2))]
@@ -15,7 +14,8 @@ namespace Plugins.Puke.RichMono
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
         private static void Create()
         {
-            var richMonoSystem = ComponentFactory.Create<RichMonoSystem>(null);
+            var gameObject = new GameObject(nameof(RichMonoSystem));
+            var richMonoSystem = gameObject.AddComponent<RichMonoSystem>();
             DontDestroyOnLoad(richMonoSystem);
         }
 

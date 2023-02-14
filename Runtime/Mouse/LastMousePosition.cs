@@ -1,7 +1,7 @@
-﻿using Plugins.Puke.RichMono;
+﻿using RichMono;
 using UnityEngine;
 
-namespace Plugins.Puke.Mouse
+namespace Mouse
 {
     public class LastMousePosition : RichMonoSingleton<LastMousePosition>
     {

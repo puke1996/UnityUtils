@@ -2,19 +2,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class Common
+namespace Finger
 {
-    public static bool TouchOnUI(Vector2 screenPosition)
+    public class Common
     {
-        if (EventSystem.current == null)
+        public static bool TouchOnUI(Vector2 screenPosition)
         {
-            return false;
-        }
+            if (EventSystem.current == null)
+            {
+                return false;
+            }
 
-        PointerEventData eventData = new PointerEventData(EventSystem.current);
-        eventData.position = screenPosition;
-        List<RaycastResult> results = new List<RaycastResult>();
-        EventSystem.current.RaycastAll(eventData, results);
-        return results.Count != 0;
+            PointerEventData eventData = new PointerEventData(EventSystem.current);
+            eventData.position = screenPosition;
+            List<RaycastResult> results = new List<RaycastResult>();
+            EventSystem.current.RaycastAll(eventData, results);
+            return results.Count != 0;
+        }
     }
 }

@@ -1,11 +1,11 @@
 using System;
-using Plugins.Puke.UnityUtilities.UnityExtensionMethods;
+using ExtensionMethods;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.Animations;
 using UnityEngine.UI;
 
-namespace Plugins.Puke.UnityUtilities.UnityEditorExtensions.Editor
+namespace Editor.EditorExtensions
 {
     public class EditorMenuGameObject : UnityEditor.Editor
     {

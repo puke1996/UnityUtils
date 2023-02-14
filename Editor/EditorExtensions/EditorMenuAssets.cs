@@ -1,10 +1,8 @@
 using System.Text;
-using Plugins.Puke.Engine.UnityEditorAPI.Editor;
-using Plugins.Puke.UnityUtilities.UnityUtils;
 using UnityEditor;
 using UnityEngine;
 
-namespace Plugins.Puke.UnityUtilities.UnityEditorExtensions.Editor
+namespace Editor.EditorExtensions
 {
     public class EditorMenuAssets : UnityEditor.Editor
     {
@@ -13,12 +11,17 @@ namespace Plugins.Puke.UnityUtilities.UnityEditorExtensions.Editor
         {
             var fileNameWithOutExt = "txt";
             var ext = "txt";
-            var fileName = FileUtils.AutoRename(EditorAPIPath.GetCurrentFullPath(), fileNameWithOutExt, ext);
-            var currentFullPath = EditorAPIPath.GetCurrentFullPath() + "/" + fileName;
+            var fileName =
+                FileUtils.AutoRename(
+                    Application.dataPath.Replace("Assets", "") + "/" +
+                    AssetDatabase.GetAssetPath(Selection.activeObject), fileNameWithOutExt, ext);
+            var currentFullPath = Application.dataPath.Replace("Assets", "") + "/" +
+                                  AssetDatabase.GetAssetPath(Selection.activeObject) + "/" + fileName;
             System.IO.File.WriteAllText(currentFullPath, "", Encoding.UTF8);
             AssetDatabase.Refresh();
             Selection.activeObject =
-                AssetDatabase.LoadAssetAtPath(EditorAPIPath.GetCurrentRelativePath() + "/" + fileName, typeof(Object));
+                AssetDatabase.LoadAssetAtPath(AssetDatabase.GetAssetPath(Selection.activeObject) + "/" + fileName,
+                    typeof(Object));
         }
 
         [MenuItem("Assets/Create/lua")]
@@ -26,12 +29,17 @@ namespace Plugins.Puke.UnityUtilities.UnityEditorExtensions.Editor
         {
             var fileNameWithOutExt = "lua";
             var ext = "lua";
-            var fileName = FileUtils.AutoRename(EditorAPIPath.GetCurrentFullPath(), fileNameWithOutExt, ext);
-            var currentFullPath = EditorAPIPath.GetCurrentFullPath() + "/" + fileName;
+            var fileName =
+                FileUtils.AutoRename(
+                    Application.dataPath.Replace("Assets", "") + "/" +
+                    AssetDatabase.GetAssetPath(Selection.activeObject), fileNameWithOutExt, ext);
+            var currentFullPath = Application.dataPath.Replace("Assets", "") + "/" +
+                                  AssetDatabase.GetAssetPath(Selection.activeObject) + "/" + fileName;
             System.IO.File.WriteAllText(currentFullPath, "", Encoding.UTF8);
             AssetDatabase.Refresh();
             Selection.activeObject =
-                AssetDatabase.LoadAssetAtPath(EditorAPIPath.GetCurrentRelativePath() + "/" + fileName, typeof(Object));
+                AssetDatabase.LoadAssetAtPath(AssetDatabase.GetAssetPath(Selection.activeObject) + "/" + fileName,
+                    typeof(Object));
         }
     }
 }

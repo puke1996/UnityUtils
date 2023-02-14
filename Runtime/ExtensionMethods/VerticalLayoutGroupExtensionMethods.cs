@@ -1,6 +1,6 @@
 using UnityEngine.UI;
 
-namespace Plugins.Puke.UnityUtilities.UnityExtensionMethods
+namespace ExtensionMethods
 {
     public static class VerticalLayoutGroupExtensionMethods
     {

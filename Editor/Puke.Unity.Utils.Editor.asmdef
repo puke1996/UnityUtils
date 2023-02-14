@@ -2,7 +2,7 @@
     "name": "Puke.Unity.Utils.Editor",
     "rootNamespace": "",
     "references": [
-        "OmiyaGames.Template"
+        "Puke.Unity.Utils"
     ],
     "includePlatforms": [
         "Editor"

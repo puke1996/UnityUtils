@@ -1,8 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;
 
-namespace Plugins.Puke.Finger
+namespace Finger
 {
     public sealed class WorldFinger : RichMono.RichMono
     {

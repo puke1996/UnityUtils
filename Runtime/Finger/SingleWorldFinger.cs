@@ -1,7 +1,6 @@
-﻿using Plugins.Puke.UnityUtilities.UnityInputCommon;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace Plugins.Puke.Finger
+namespace Finger
 {
     public sealed class SingleWorldFinger : RichMono.RichMono
     {

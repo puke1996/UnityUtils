@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Plugins.Puke.RichMono
+namespace RichMono
 {
     [DefaultExecutionOrder(int.MaxValue)]
     internal class RichMonoSystemPartition2 : MonoBehaviour

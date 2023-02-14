@@ -1,7 +1,7 @@
 ﻿using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-namespace Plugins.Puke.UnityUtilities.UnitySimpleUIComponents
+namespace UGUIComponents
 {
     /// <summary>
     /// 使滚动视图可配置关闭拖拽功能

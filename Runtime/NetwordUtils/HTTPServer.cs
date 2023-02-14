@@ -2,7 +2,7 @@
 using System.Net;
 using System.Threading;
 
-namespace Plugins.Puke.UnityUtilities.UnityNetworkUtils
+namespace NetwordUtils
 {
     public class HTTPServer
     {

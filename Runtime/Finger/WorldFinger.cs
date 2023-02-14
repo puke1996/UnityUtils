@@ -18,7 +18,7 @@ namespace Finger
         public override void EarlyUpdate()
         {
 #if UNITY_EDITOR
-            if (Input.GetMouseButtonDown(0) && Common.TouchOnUI(Input.mousePosition))
+            if (Input.GetMouseButtonDown(0) && InputCommon.TouchOnUI(Input.mousePosition))
             {
                 Fingers.Add(new EditorFinger());
             }
@@ -26,7 +26,7 @@ namespace Finger
             for (var i = 0; i < UnityEngine.Input.touchCount; i++)
             {
                 var touch = UnityEngine.Input.GetTouch(i);
-                if (touch.phase == TouchPhase.Began && Common.TouchOnUI(Input.mousePosition))
+                if (touch.phase == TouchPhase.Began && InputCommon.TouchOnUI(Input.mousePosition))
                 {
                     fingers.Add(new Finger(touch.fingerId));
                 }

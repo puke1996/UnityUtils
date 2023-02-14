@@ -27,7 +27,7 @@ namespace Mouse
         {
             get
             {
-                if (Common.TouchOnUI(Input.mousePosition))
+                if (!InputCommon.TouchOnUI(Input.mousePosition))
                 {
                     return Input.GetAxis("Mouse ScrollWheel");
                 }
@@ -50,20 +50,17 @@ namespace Mouse
         /// </summary>
         public override void EarlyUpdate()
         {
-            if (Input.GetMouseButtonDown(0) &&
-                Common.TouchOnUI(Input.mousePosition) && !TouchedOnGizmo)
+            if (Input.GetMouseButtonDown(0) && !InputCommon.TouchOnUI(Input.mousePosition))
             {
                 LeftMouseButtonDown = true;
             }
 
-            if (Input.GetMouseButtonDown(1) &&
-                Common.TouchOnUI(Input.mousePosition) && !TouchedOnGizmo)
+            if (Input.GetMouseButtonDown(1) && !InputCommon.TouchOnUI(Input.mousePosition))
             {
                 RightMouseButtonDown = true;
             }
 
-            if (Input.GetMouseButtonDown(2) &&
-                Common.TouchOnUI(Input.mousePosition) && !TouchedOnGizmo)
+            if (Input.GetMouseButtonDown(2) && !InputCommon.TouchOnUI(Input.mousePosition))
             {
                 MiddleMouseButtonDown = true;
             }

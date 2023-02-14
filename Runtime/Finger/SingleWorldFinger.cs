@@ -14,7 +14,7 @@ namespace Finger
         {
 #if UNITY_EDITOR
             // 如果鼠标左键点下并且不与UI交互
-            if (Input.GetMouseButtonDown(0) && Common.TouchOnUI(Input.mousePosition))
+            if (Input.GetMouseButtonDown(0) && InputCommon.TouchOnUI(Input.mousePosition))
             {
                 _finger = new EditorFinger();
             }
@@ -24,7 +24,7 @@ namespace Finger
                 for (var i = 0; i < Input.touchCount; i++)
                 {
                     var touch = Input.GetTouch(i);
-                    if (touch.phase == TouchPhase.Began && Common.TouchOnUI(Input.mousePosition))
+                    if (touch.phase == TouchPhase.Began && InputCommon.TouchOnUI(Input.mousePosition))
                     {
                         _finger = new Finger(touch.fingerId);
                         break;

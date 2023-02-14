@@ -9,16 +9,14 @@
   "type": "tool",
   "license": "MIT",
   "author": {
-    "name": "puke1996",
+    "name": "Puke",
     "email": "17713579835@163.com",
     "url": "https://www.omiyagames.com"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "keywords": [
     "puke1996",
     "utils",
-    "Template",
     "Tool"
   ],
   "samples": [

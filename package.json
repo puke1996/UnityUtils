@@ -1,0 +1,32 @@
+{
+  "name": "com.puke.unityutils",
+  "displayName": "Puke's Unity Utils",
+  "version": "1.0.0",
+  "unity": "2021.2",
+  "unityRelease": "11f1",
+  "description": "This is unity utils.",
+  "category": "Tool",
+  "type": "tool",
+  "license": "MIT",
+  "author": {
+    "name": "puke1996",
+    "email": "17713579835@163.com",
+    "url": "https://www.omiyagames.com"
+  },
+  "dependencies": {
+    "com.unity.ext.nunit": "1.0.0"
+  },
+  "keywords": [
+    "puke1996",
+    "utils",
+    "Template",
+    "Tool"
+  ],
+  "samples": [
+    {
+      "displayName": "Example 1",
+      "description": "This sample is just an example",
+      "path": "Samples~/Example1"
+    }
+  ]
+}
